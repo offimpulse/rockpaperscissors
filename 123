@@ -4,7 +4,7 @@ const getUserChoice = (userInput) => {
   result = valid.includes(userInput.toLowerCase()) //works
     ? userInput.toLowerCase()
     : "error";
-  console.log(result);
+  return result;
 };
 //getUserChoice("1");
 
@@ -59,8 +59,8 @@ const playGame = () => {
   var userChoice = getUserChoice("paper");
   var computerChoice = getComputerChoice();
   console.log("you threw " + userChoice);
-  // console.log("pc threw" + computerChoice);
-  // console.log(determineWinner(userChoice, computerChoice));
+  console.log("pc threw" + computerChoice);
+  console.log(determineWinner(userChoice, computerChoice));
 };
 playGame();
 //13
