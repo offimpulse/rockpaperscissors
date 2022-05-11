@@ -1,19 +1,19 @@
 const valid = ["rock", "paper", "scissors"];
 
 const getUserChoice = (userInput) => {
-  result = valid.includes(userInput.toLowerCase())
+  result = valid.includes(userInput.toLowerCase()) //works
     ? userInput.toLowerCase()
     : "error";
   console.log(result);
 };
-// getUserChoice("1");
+//getUserChoice("1");
 
 //5
 const getComputerChoice = () => {
   rnumber = Math.floor(Math.random() * 3);
   // console.log(rnumber)
   if (rnumber == 0) {
-    return "rock";
+    return "rock"; //works
   } else if (rnumber == 1) {
     return "paper";
   } else {
@@ -51,17 +51,16 @@ const determineWinner = (userChoice, computerChoice) => {
     }
   }
 };
-
+// console.log(determineWinner("paper", 'scissors'))        //works
 //11
-// console.log(determineWinner('paper', "scissors"))
 
 //12
-const playGame = () =>{
-  var userChoice = getUserChoice();
+const playGame = () => {
+  var userChoice = getUserChoice("paper");
   var computerChoice = getComputerChoice();
-  console.log(userChoice);
-  console.log(computerChoice);
-  console.log(determineWinner(userChoice, computerChoice));
-}
-playGame()
+  console.log("you threw " + userChoice);
+  // console.log("pc threw" + computerChoice);
+  // console.log(determineWinner(userChoice, computerChoice));
+};
+playGame();
 //13
