@@ -4,7 +4,8 @@ const getUserChoice = (userInput) => {
   result = valid.includes(userInput.toLowerCase()) //works
     ? userInput.toLowerCase()
     : "error";
-  return result;
+  return result  
+  
 };
 //getUserChoice("1");
 
